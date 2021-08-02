@@ -28,9 +28,9 @@ public class FoodTruckApp {
 	}
 	
 	public void start() {
+		createFoodTrucks(kb);
 		while (foodTrucks.length > 0) {
 			menu();
-			createFoodTrucks(kb);
 			String select = kb.next();
 			if (select.equals("1")) {
 				foodTruckListing();
